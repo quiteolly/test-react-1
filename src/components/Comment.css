@@ -1,0 +1,67 @@
+.Comment {
+	padding-left: 1.5em;
+}
+
+.Comment:hover {
+	box-shadow: -2px 0 #61dafb;
+}
+
+@media (max-width: 719px) {
+	/* Disable first-level padding on mobile */
+	.Comment--level-1 {
+		padding-left: 0;
+	}
+
+	.Comment--level-1:hover {
+		box-shadow: none;
+	}
+}
+
+.Comment + .Comment {
+	margin-top: 1.5em;
+}
+
+/* Comment text */
+.Comment__body {
+	margin: 0;
+}
+
+.Comment__author {
+	margin-right: 1em;
+}
+
+.Comment__timestamp {
+	color: #aaa;
+}
+
+.Comment__content {
+	margin-bottom: 0.25em;
+}
+
+.Comment__content > p {
+	margin: 0;
+}
+
+/* Reply button */
+.Comment__reply-button {
+	border: 0;
+	color: #61dafb;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 0;
+	text-decoration: underline;
+}
+
+.Comment__reply-button:hover {
+	text-decoration: none;
+}
+
+.Comment__reply-button:focus {
+	outline: 2px solid;
+	outline-offset: 2px;
+	text-decoration: none;
+}
+
+.Comment__replies.Comment__replies {
+	margin-top: 0.75em;
+}

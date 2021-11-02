@@ -1,0 +1,33 @@
+.CommentForm {
+	margin-bottom: 3em;
+}
+
+.CommentForm__header {
+	margin-bottom: 0.5em;
+}
+
+.CommentForm__field {
+	margin-bottom: 1.5em;
+}
+
+.CommentForm__field > label {
+	display: block;
+	font-weight: bold;
+	padding-bottom: 0.5em;
+}
+
+/* Submit button */
+.CommentForm__button {
+	background: #61dafb;
+	border: 0;
+	border-radius: 4px;
+	color: #000;
+	font-size: 1.125em;
+	font-weight: bold;
+	padding: 0.5em 1em;
+}
+
+.CommentForm__button:focus {
+	outline: 2px solid;
+	outline-offset: -4px;
+}
